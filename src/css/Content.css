@@ -1,0 +1,534 @@
+/* CSS Content
+*   @Author KhanhHN9
+*   @Date 31.10.2022
+*/
+
+
+div#Content {
+    color: var(--Color);
+    margin-top: 7em;
+}
+
+p.container-welcome_item1 {
+    color: gray;
+}
+
+div.container-welcome {
+    width: 100%;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+div.container-welcome div {
+    width: 48%;
+    height: 100%;
+}
+
+div.container-welcome div.container-welcome__info {
+    padding-top: 5em;
+}
+
+div.container-welcome div.container-welcome__info h1 {
+    font-size: 4em;
+    white-space: normal;
+}
+
+div.container-welcome div.container-welcome__info button {
+    margin-top: 3em;
+}
+
+div.container-welcome div.container-welcome__info p {
+    margin: 0.4em 0;
+}
+
+div.container-welcome div img {
+    width: 100%;
+    min-height: 80vh;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px 0px grey;
+}
+
+/* contentReview */
+
+div.contentReview {
+    position: relative;
+    flex-direction: column;
+}
+
+div.contentReview,
+div.contentReview div {
+    justify-content: space-between;
+}
+
+div.contentReview>div a {
+    font-size: 3em;
+    text-decoration: none;
+    color: var(--Color);
+}
+
+div.contentReview>div:last-child {
+    color: gray;
+    margin-top: 0.8em;
+}
+
+.review-vote svg {
+    color: goldenrod;
+    font-size: 1.5em;
+}
+
+.iconVerifid {
+    position: absolute;
+    top: 5px;
+    left: 3.3em;
+    width: 1em;
+}
+
+div.containerContact {
+    margin: 7em 0 20em 0px;
+    width: 100%;
+    min-height: 20vh;
+    justify-content: space-between;
+}
+
+div.containerContact a {
+    color: var(--Color);
+    text-decoration: none;
+}
+
+div.containerContact a nav {
+    text-transform: capitalize;
+}
+
+div.containerContact a svg {
+    font-size: 7.2vw;
+    margin: 0 0.3em;
+    transition: all 0.1s;
+}
+
+div.containerContact a:hover {
+    color: skyblue;
+    transition: all 0.1s;
+}
+
+div.containerhowItWorks {
+    margin: 15em 0;
+    flex-direction: column;
+}
+
+button.HowItWorks__btn {
+    position: relative;
+    height: 3vh;
+    width: 5.5vw;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    color: var(--Color);
+    opacity: 0.6;
+    overflow: hidden;
+    border-radius: 12px;
+    background: none;
+}
+
+button.HowItWorks__btn svg {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    font-size: 8vh;
+    transition: all 0.2s;
+}
+
+button.HowItWorks__btn svg:hover {
+    color: skyblue;
+    cursor: pointer;
+    bottom: 3px;
+    transition: all 0.2s;
+}
+
+h1.HowItWorks__title {
+    color: var(--Color);
+    margin: 0.6em 0 1.5em 0;
+}
+
+nav.HowItWorks__nav {
+    color: gray;
+    font-size: 1.2em;
+    margin-bottom: 4em;
+}
+
+div.groupWorks {
+    width: 100%;
+    margin-bottom: 5em;
+    justify-content: space-between;
+}
+
+div.groupWorks div {
+    flex-direction: column;
+}
+
+div.groupWorks div>svg {
+    font-size: 20vh;
+}
+
+div.groupWorks div>a {
+    color: rgb(14, 43, 183);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: 600;
+}
+
+div.groupWorks div>a svg {
+    margin-left: 0.5em;
+    opacity: 0.6;
+    font-size: 2vw;
+}
+
+div.groupWorks div>a:hover {
+    color: var(--Color);
+}
+
+div.groupWorks div.works__item:hover {
+    cursor: pointer;
+    color: wheat;
+    transition: ease-in-out 0.2s;
+}
+
+div.groupWorks div.works__item:first-child:hover {
+    color: green !important;
+}
+
+div.groupWorks div.works__item:last-child:hover {
+    color: goldenrod !important;
+}
+
+div.groupViews {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+div.renderViews>div.viewItem {
+    width: 100%;
+    height: 50vh;
+    margin: 5vh 1em;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+    box-shadow: 4px 4px 8px 0px grey;
+    background-color: aliceblue;
+    overflow: hidden;
+    justify-content: space-between !important;
+}
+
+div.renderViews>div.viewItem:hover {
+    box-shadow: 0 0 2px 1px var(--Color);
+}
+div.renderViews>div.viewItem span.bookMark {
+    position: absolute;
+    right: 4px;
+    top: -2px;
+    z-index: 8;
+    font-size: 3vw;
+    color: goldenrod;
+}
+
+div.renderViews>div.viewItem {
+    width: 30%;
+}
+
+div.renderViews div:first-child img {
+    width: 100%;
+    height: 100%;
+}
+
+div.renderViews .bill {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-start !important;
+}
+
+div.renderViews .bill div a {
+    margin: 0.4vw 0 0 0.3vw;
+    font-size: 1vw;
+    color: gray;
+}
+
+div.renderViews .bill h3,
+div.renderViews .bill div {
+    justify-content: flex-start !important;
+}
+
+div.renderViews .bill h3 svg {
+    margin-right: 0.3em;
+    font-size: 2vw;
+    color: green;
+    font-weight: bold;
+}
+
+ul.group-info {
+    margin-top: 1em;
+    width: 100%;
+    justify-content: space-between !important;
+}
+
+ul.group-info li {
+    font-weight: 600;
+    list-style-type: none;
+}
+
+ul.group-info li svg {
+    padding: 2px 5px;
+    font-size: 1.5vw;
+    color: goldenrod;
+}
+
+ul.group-info li:first-child svg {
+    color: firebrick;
+}
+
+ul.group-info li:last-child svg {
+    color: green;
+}
+
+h1.titleHeader {
+    text-transform: capitalize;
+}
+
+div.infoheader {
+    margin-top: 1em;
+    justify-content: space-between;
+}
+
+div.infoheader nav {
+    color: gray;
+}
+
+div.infoheader a {
+    font-weight: 600;
+    color: rgb(14, 43, 183);
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+div.infoheader a svg {
+    font-size: 2vw;
+}
+
+div.viewStore{
+    height: 60vh;
+    justify-content: space-between;
+}
+
+div.slide-show{
+    width: 50%;
+    height: 100%;
+}
+div.slide-show img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px 0px grey;
+}
+div.contact-info{
+    width: 45%;
+    text-align: left;
+    height: 100%;
+    flex-direction: column;
+}
+
+div.contact-info h3{
+    margin: 0.4em 0;
+    justify-content: flex-start;
+}
+div.contact-info h3 span{
+    font-weight: normal;
+    margin-right: 0.7em;
+}
+div.contact-info h3 svg{
+    color: green;
+    margin-left: 0.3em;
+}
+div.contact-info p.info{
+    color: gray;
+    margin-top: 3em;
+    cursor: default;
+}
+
+div.viewStore div.bill{
+    margin-top: 2em;
+}
+div.viewStore div.bill svg{
+    font-size: 4em;
+}
+div#showCardView{
+    margin: 3em 0;
+}
+div#Content > video{
+    width: 100%;
+    
+}
+
+@media screen and (max-width: 1026px) {
+
+    div.renderViews {
+        flex-direction: column !important;
+    }
+
+    div.renderViews>div.viewItem {
+        width: 98% !important;
+        height: auto;
+    }
+
+    ul.group-info li svg {
+        font-size: 4.5vw !important;
+    }
+
+    div.renderViews .bill h3 svg {
+        font-size: 1.6em;
+    }
+
+    div.renderViews .bill h3,
+    div.renderViews .bill div {
+        margin-top: 1em;
+        font-size: 1.2em;
+    }
+
+    div.renderViews .bill div a {
+        font-size: 1.2em;
+    }
+
+    .container-welcome__info h1 {
+        font-size: 8vw !important;
+    }
+
+    div.containerContact {
+        flex-wrap: wrap;
+    }
+
+    div.containerContact>a {
+        width: 48% !important;
+        margin: 2em 0;
+    }
+
+    div.containerContact a svg {
+        font-size: 12vw !important;
+    }
+    button.HowItWorks__btn{
+        width: 7.5vw;
+    }
+    div.renderViews>div.viewItem span.bookMark{
+        font-size: 10vw;
+    }
+
+    div#showCardView{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    
+    div#Header {
+        width: 80vw;
+    }
+
+    div#Header ul:last-child {
+        display: none;
+    }
+
+    div#Content {
+        margin-top: 5em !important;
+    }
+
+    div.container-welcome div.container-welcome__info {
+        padding-top: 0 !important;
+    }
+
+    div.container-welcome {
+        min-height: 88vh;
+        flex-wrap: wrap !important;
+        flex-direction: column !important;
+    }
+    div.contentReview>div a{
+        font-size: 2.3em;
+    }
+    .review-vote svg{
+        display: none;
+    }
+    div.container-welcome div {
+        width: 100% !important;
+        margin: 2vh 0;
+    }
+
+    div.containerContact {
+        margin-bottom: 0em;
+    }
+
+    div.container-welcome div img {
+        height: 100%;
+        min-height: 45vh;
+    }
+
+    div.containerhowItWorks,
+    div.containerhowItWorks,
+    div.groupWorks{
+        margin: 2em 0 !important;
+    }
+
+    button.HowItWorks__btn {
+        width: 15vw;
+    }
+
+    div.contentReview {
+        margin: 5vh 0 !important;
+    }
+
+    div.contentReview>div a svg{
+        font-size: 0.7em;
+        margin-left: 1em;
+    }
+
+    div.review-bottom nav:last-child {
+        display: none !important;
+    }
+
+    div.containerContact {
+        margin-top: 3vh !important;
+        flex-wrap: nowrap !important;
+        flex-direction: column !important;
+    }
+
+    div.containerContact>a {
+        width: 100% !important;
+        margin: 2em 0;
+    }
+
+    div.containerContact a svg {
+        font-size: 25vw !important;
+    }
+
+    div.groupWorks {
+        flex-direction: column !important;
+    }
+
+    div.groupWorks div {
+        width: 100% !important;
+        margin: 2em 0 !important;
+    }
+    nav.HowItWorks__nav{
+        margin-bottom: 0 !important;
+    }
+    div.groupWorks div:first-child {
+        margin-top: 0 !important;
+    }
+
+    div.groupWorks div svg {
+        font-size: 35vh;
+    }
+
+    div.infoheader nav {
+        display: none;
+    }
+}

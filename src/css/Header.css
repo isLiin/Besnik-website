@@ -1,0 +1,256 @@
+/* CSS Header
+*   @Author KhanhHN9
+*   @Date 31.10.2022
+*/
+
+div#Header {
+    position: fixed;
+    top: 0%;
+
+    width: 76vw;
+    margin: 0 auto;
+    padding-right: 10px;
+    height: 5rem;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+}
+
+div#Header ul {
+    background-color: inherit;
+    align-items: center;
+}
+
+div#Header ul li {
+    list-style-type: none;
+}
+
+div#Header ul:first-child {
+    width: 50%;
+    height: 100%;
+    justify-content: flex-start;
+    padding-left: 0px !important;
+}
+
+div#Header ul.container-button-header {
+    width: 20%;
+    height: 100%;
+    justify-content: space-between;
+}
+div#Header ul.container-button-header .btn{
+    width: 49% !important;
+}
+
+div#Header ul:first-child li:first-child {
+    padding-left: 0px !important;
+    margin-left: 0 !important;
+    font-size: larger;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+div#Header ul:first-child li:first-child:hover {
+    border-bottom: 1px solid #fff;
+}
+
+div#Header ul:first-child li {
+    margin: auto;
+    padding: 5px 15px;
+    border-bottom: 1px solid #fff;
+}
+
+div#Header ul:first-child li:hover {
+    border-bottom: 1px solid tomato;
+}
+
+div#Header ul:first-child li:hover span {
+    cursor: pointer;
+    color: var(--Color);
+    transition: all 0.2s;
+}
+
+div#Header ul:first-child li span {
+    width: 100%;
+    height: 100%;
+    color: var(--Color);
+    text-decoration: none;
+}
+
+div#Header ul:last-child button {
+    width: 48%;
+}
+
+div#popup {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: none;
+    /* box-shadow: inset 0 0 20px 20px rgba(128, 128, 128, 0.466); */
+    background-color: rgba(128, 128, 128, 0);
+}
+
+div#popup form {
+    position: relative;
+    margin: 25vh auto;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: 100% 100%;
+    background-position: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px 0px grey;
+    color: #fff;
+    cursor: default;
+}
+
+div#popup form#SignIn {
+    width: 45vw;
+    height: 40vh;
+    background-image: url(../images/bgr-001.jpg);
+}
+
+div#popup form#SignUp {
+    width: 35vw;
+    height: 60vh;
+    background-image: url(../images/bgr-000.jpg);
+}
+
+div#popup form>h1 {
+    position: absolute;
+    left: 2em;
+    top: 0.8em;
+    text-transform: uppercase;
+}
+
+div#popup form button.btn-close{
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: fixed;
+    color: #fff;
+    top: 1em;
+    right: 1em;
+}
+div#popup form button.btn-close:hover{
+    font-weight: 600;
+    cursor: pointer;
+    background-color: tomato;
+    box-shadow: inset 0 0 5px 0 var(--Color);
+}
+
+div#popup form#SignIn>div.group-item{
+    top: 30% !important;
+}
+div#popup form>div.group-item{
+    position: absolute;
+    top: 25%;
+    width: 60%;
+}
+div#popup form>input{
+    color: var(--Color);
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding: 10px 45px;
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 1em;
+}
+div#popup form>input:hover{
+    background: gray;
+    transition: all 0.2s;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 0 5px 0 #fff;
+}
+
+div.group-item input{
+    padding: 10px 25px;
+    display: block;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    margin: 1em 0;
+    width: 100%;
+}
+
+
+div.group-item>span{
+    align-items: center;
+    justify-content: flex-start;
+}
+div.group-item>span input{
+    padding: 5px;
+    width: 25%;
+}
+div.group-item>span label{ 
+    cursor: pointer;
+}
+div.group-item>span input:hover,
+div.group-item>span input:active,
+div.group-item>span input:focus{
+    box-shadow: inset 0 0 0 0 gray;
+}
+div.group-item input:hover,
+div.group-item input:active,
+div.group-item input:focus{
+    cursor: pointer;
+    box-shadow: inset 0 0 8px 1px gray;
+}
+
+
+
+@media screen and (max-width: 1026px) {
+    div#Header ul.container-button-header {
+        width: 30% !important;
+    }
+
+    div#Header ul li:first-child {
+        display: block;
+    }
+
+    div#Header ul:last-child {
+        width: 35% !important;
+    }
+
+    div#Header ul li {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    div#Header ul.container-button-header {
+        width: 38% !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    div#Header ul:last-child {
+        display: none;
+    }
+
+    ul.container-button-header {
+        display: none !important;
+    }
+
+    ul.container-button-header:last-child {
+        display: flex !important;
+        justify-content: flex-end !important;
+    }
+
+    ul.container-button-header div svg {
+        font-size: 2em;
+        color: var(--Color);
+    }
+}

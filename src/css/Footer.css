@@ -1,0 +1,62 @@
+/* CSS Footer
+*   @Author KhanhHN9
+*   @Date 2.11.2022
+*/
+
+#ThisFooter{
+    width: 100%;
+    height: 50vh;
+    padding-top: 2em;
+    margin-top: 2em;
+    box-shadow: inset 0 0 4px 1px gray;
+    background-color: lightgrey;
+    /* background-color: aqua;÷\ */
+}
+#contactFooter{
+    margin: 0 auto;
+    width: 75vw;
+    height: 60%;
+}
+#contactFooter thead{
+    color: var(--Color);
+    cursor: default;
+}
+#contactFooter tr{
+    width: 100%;
+}
+#contactFooter tr td{
+    text-align: left;
+    justify-content: center;
+    width: calc(100% / 4);
+}
+#contactFooter tr td h3{
+    padding: 5px 15px;
+}
+#contactFooter tr td{
+    color: var(--Color);
+}
+#contactFooter tr td a{
+    text-transform: capitalize;
+    padding: 5px 15px;
+    color: gray;
+    text-decoration: none;
+}
+#contactFooter tr td a:hover{
+    color: #fff;
+    transition: all 0.2s;
+    font-weight: 600;
+}
+#contactFooter tr td svg{
+    font-size: larger;
+}
+
+#contactFooter tr td.link__Facebook svg{
+    color: #4267B2;
+}
+
+#contactFooter tr td.link__Dev svg{
+    color: var(--Color);
+}
+#contactFooter tr td.link__Github svg{
+    color: black;
+}

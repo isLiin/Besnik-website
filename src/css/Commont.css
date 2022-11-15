@@ -1,0 +1,45 @@
+/* CSS Commont
+*   @Author KhanhHN9
+*   @Date 31.10.2022
+*/
+
+:root{
+    --Color : #141f54;
+}
+
+.disFlex {
+    display: flex;
+}
+.disNone{
+    display: none;
+}
+.disFlex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    text-transform: capitalize;
+    height: 3em;
+    border: none;
+    color: var(--Color);
+    background: none;
+    border-radius: 7px;
+    padding: 10px 25px;
+    outline: none !important;
+}
+.btn-active,
+.btn:hover{
+    cursor: pointer !important;
+    font-weight: 600;
+    box-shadow: 0 0 3px 0 gray;
+    background-color: var(--Color) !important;
+    color: #fff !important;
+}
+
+.btn:hover{
+    transition: all 0.2;
+    color: var(--Color) !important;
+    background-color: gray !important;
+}
